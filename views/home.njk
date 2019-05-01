@@ -1,0 +1,10 @@
+<h1>Informe a sua Idade</h1>
+
+{% if(emptyAge) %}
+<h2>Você precisa informar uma idade!</h2>
+{% endif %}
+
+<form action="/check" method="POST">
+<input name="age" />
+<button type="Submit" >Verificar</button>
+</form>
